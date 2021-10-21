@@ -6,10 +6,7 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "Model/Contact.h"
 
 @implementation ViewController
 
@@ -18,5 +15,17 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)addContact {
+    NSLog(@"clicou ");
+    
+    Contact *contact = [Contact new];
+    [contact setName:self.name.text];
+    contact.address = self.address.text;
+    contact.email = self.email.text;
+    contact.phone = self.phone.text;
+    contact.site =  self.site.text;
+
+    NSLog(@"Add contact %@, %@, %@, %@, %@", [contact name], contact.address, contact.email, contact.phone, contact.site);
+}
 
 @end

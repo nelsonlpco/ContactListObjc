@@ -9,6 +9,11 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UITextField *name;
+@property IBOutlet UITextField *email;
+@property IBOutlet UITextField *address;
+@property IBOutlet UITextField *phone;
+@property IBOutlet UITextField *site;
 
 @end
 

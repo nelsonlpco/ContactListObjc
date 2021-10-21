@@ -80,6 +80,9 @@
                                 <rect key="frame" x="0.0" y="492.5" width="414" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Adicionar"/>
+                                <connections>
+                                    <action selector="addContact" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEN-DX-lVW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,6 +96,13 @@
                             <constraint firstItem="VNm-Rj-WJt" firstAttribute="top" secondItem="Evq-SG-ruF" secondAttribute="bottom" constant="16" id="sgb-St-Wnr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="x5D-ih-wmy" id="oY4-3f-blI"/>
+                        <outlet property="email" destination="LpN-If-Cmo" id="PMt-VF-yab"/>
+                        <outlet property="name" destination="LFe-Qa-Jr5" id="cdb-Y0-GXP"/>
+                        <outlet property="phone" destination="qqF-Mr-zRq" id="QLO-r3-0Wr"/>
+                        <outlet property="site" destination="C0M-f4-g3n" id="zwC-Gz-5xI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

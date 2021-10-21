@@ -14,6 +14,7 @@
 		521F68E9272223CF0040E421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521F68E8272223CF0040E421 /* Assets.xcassets */; };
 		521F68EC272223CF0040E421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521F68EA272223CF0040E421 /* LaunchScreen.storyboard */; };
 		521F68EF272223CF0040E421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68EE272223CF0040E421 /* main.m */; };
+		521F68FA27222AAF0040E421 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68F927222AAF0040E421 /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		521F68EB272223CF0040E421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		521F68ED272223CF0040E421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521F68EE272223CF0040E421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		521F68F827222AAE0040E421 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		521F68F927222AAF0040E421 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		521F68DB272223CD0040E421 /* ContactListObjC */ = {
 			isa = PBXGroup;
 			children = (
+				521F68F727222A670040E421 /* Model */,
 				521F68DC272223CD0040E421 /* AppDelegate.h */,
 				521F68DD272223CD0040E421 /* AppDelegate.m */,
 				521F68DF272223CD0040E421 /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				521F68EE272223CF0040E421 /* main.m */,
 			);
 			path = ContactListObjC;
+			sourceTree = "<group>";
+		};
+		521F68F727222A670040E421 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				521F68F827222AAE0040E421 /* Contact.h */,
+				521F68F927222AAF0040E421 /* Contact.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 			files = (
 				521F68E4272223CD0040E421 /* ViewController.m in Sources */,
 				521F68DE272223CD0040E421 /* AppDelegate.m in Sources */,
+				521F68FA27222AAF0040E421 /* Contact.m in Sources */,
 				521F68EF272223CF0040E421 /* main.m in Sources */,
 				521F68E1272223CD0040E421 /* SceneDelegate.m in Sources */,
 			);
