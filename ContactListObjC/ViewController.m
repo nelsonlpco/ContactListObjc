@@ -10,6 +10,17 @@
 
 @implementation ViewController
 
+-(ViewController *) initWithCoder: (NSCoder *) aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Adicionar" style:UIBarButtonItemStylePlain  target:self action:@selector(addContact)];
+        self.navigationItem.rightBarButtonItem = addButton;
+        self.navigationItem.title = @"Novo contato";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,6 +37,8 @@
     contact.site =  self.site.text;
 
     NSLog(@"Add contact %@, %@, %@, %@, %@", [contact name], contact.address, contact.email, contact.phone, contact.site);
+    
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 @end

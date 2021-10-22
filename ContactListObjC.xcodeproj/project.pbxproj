@@ -15,6 +15,7 @@
 		521F68EC272223CF0040E421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521F68EA272223CF0040E421 /* LaunchScreen.storyboard */; };
 		521F68EF272223CF0040E421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68EE272223CF0040E421 /* main.m */; };
 		521F68FA27222AAF0040E421 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68F927222AAF0040E421 /* Contact.m */; };
+		521F68FE2722322B0040E421 /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68FD2722322B0040E421 /* ContactsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		521F68EE272223CF0040E421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		521F68F827222AAE0040E421 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		521F68F927222AAF0040E421 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		521F68FC2722322B0040E421 /* ContactsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		521F68FD2722322B0040E421 /* ContactsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		521F68DB272223CD0040E421 /* ContactListObjC */ = {
 			isa = PBXGroup;
 			children = (
+				521F68FB2722321C0040E421 /* View */,
 				521F68F727222A670040E421 /* Model */,
 				521F68DC272223CD0040E421 /* AppDelegate.h */,
 				521F68DD272223CD0040E421 /* AppDelegate.m */,
@@ -87,6 +91,15 @@
 				521F68F927222AAF0040E421 /* Contact.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		521F68FB2722321C0040E421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				521F68FC2722322B0040E421 /* ContactsListViewController.h */,
+				521F68FD2722322B0040E421 /* ContactsListViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,7 @@
 			files = (
 				521F68E4272223CD0040E421 /* ViewController.m in Sources */,
 				521F68DE272223CD0040E421 /* AppDelegate.m in Sources */,
+				521F68FE2722322B0040E421 /* ContactsListViewController.m in Sources */,
 				521F68FA27222AAF0040E421 /* Contact.m in Sources */,
 				521F68EF272223CF0040E421 /* main.m in Sources */,
 				521F68E1272223CD0040E421 /* SceneDelegate.m in Sources */,
@@ -313,7 +327,6 @@
 				INFOPLIST_FILE = ContactListObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +353,6 @@
 				INFOPLIST_FILE = ContactListObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
