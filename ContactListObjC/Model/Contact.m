@@ -14,14 +14,21 @@ NSString *phone;
 NSString *email;
 NSString *address;
 NSString *site;
+//
+//-(void) setName:(NSString *)newValue {
+//    name = newValue;
+//}
+//
+//-(NSString *) name{
+//    return name;
+//}
 
--(void) setName:(NSString *)newValue {
-    name = newValue;
+-(NSString *)description {
+    NSString *data = [NSString stringWithFormat:@"Contato: %@ %@ %@ %@ %@", self.name, self.phone, self.email, self.address, self.site];
+    
+    return data;
 }
 
--(NSString *) name{
-    return name;
-}
 
 //Obs não é necessário definir a estrutura na inteface property a notation property cria a implementação dos gettets e setters
 

@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		521F68DE272223CD0040E421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68DD272223CD0040E421 /* AppDelegate.m */; };
 		521F68E1272223CD0040E421 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68E0272223CD0040E421 /* SceneDelegate.m */; };
-		521F68E4272223CD0040E421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68E3272223CD0040E421 /* ViewController.m */; };
+		521F68E4272223CD0040E421 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68E3272223CD0040E421 /* AddContactViewController.m */; };
 		521F68E7272223CD0040E421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521F68E5272223CD0040E421 /* Main.storyboard */; };
 		521F68E9272223CF0040E421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521F68E8272223CF0040E421 /* Assets.xcassets */; };
 		521F68EC272223CF0040E421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521F68EA272223CF0040E421 /* LaunchScreen.storyboard */; };
 		521F68EF272223CF0040E421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68EE272223CF0040E421 /* main.m */; };
 		521F68FA27222AAF0040E421 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68F927222AAF0040E421 /* Contact.m */; };
 		521F68FE2722322B0040E421 /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F68FD2722322B0040E421 /* ContactsListViewController.m */; };
+		52EAFB7527245A1100CBC31B /* ContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EAFB7427245A1100CBC31B /* ContactDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,8 @@
 		521F68DD272223CD0040E421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		521F68DF272223CD0040E421 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		521F68E0272223CD0040E421 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		521F68E2272223CD0040E421 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		521F68E3272223CD0040E421 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		521F68E2272223CD0040E421 /* AddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		521F68E3272223CD0040E421 /* AddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 		521F68E6272223CD0040E421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		521F68E8272223CF0040E421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521F68EB272223CF0040E421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,8 @@
 		521F68F927222AAF0040E421 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		521F68FC2722322B0040E421 /* ContactsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
 		521F68FD2722322B0040E421 /* ContactsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
+		52EAFB7327245A1100CBC31B /* ContactDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDAO.h; sourceTree = "<group>"; };
+		52EAFB7427245A1100CBC31B /* ContactDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +70,13 @@
 		521F68DB272223CD0040E421 /* ContactListObjC */ = {
 			isa = PBXGroup;
 			children = (
+				52EAFB7227245A0400CBC31B /* Repository */,
 				521F68FB2722321C0040E421 /* View */,
 				521F68F727222A670040E421 /* Model */,
 				521F68DC272223CD0040E421 /* AppDelegate.h */,
 				521F68DD272223CD0040E421 /* AppDelegate.m */,
 				521F68DF272223CD0040E421 /* SceneDelegate.h */,
 				521F68E0272223CD0040E421 /* SceneDelegate.m */,
-				521F68E2272223CD0040E421 /* ViewController.h */,
-				521F68E3272223CD0040E421 /* ViewController.m */,
 				521F68E5272223CD0040E421 /* Main.storyboard */,
 				521F68E8272223CF0040E421 /* Assets.xcassets */,
 				521F68EA272223CF0040E421 /* LaunchScreen.storyboard */,
@@ -96,10 +98,21 @@
 		521F68FB2722321C0040E421 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				521F68E2272223CD0040E421 /* AddContactViewController.h */,
+				521F68E3272223CD0040E421 /* AddContactViewController.m */,
 				521F68FC2722322B0040E421 /* ContactsListViewController.h */,
 				521F68FD2722322B0040E421 /* ContactsListViewController.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		52EAFB7227245A0400CBC31B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				52EAFB7327245A1100CBC31B /* ContactDAO.h */,
+				52EAFB7427245A1100CBC31B /* ContactDAO.m */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521F68E4272223CD0040E421 /* ViewController.m in Sources */,
+				521F68E4272223CD0040E421 /* AddContactViewController.m in Sources */,
+				52EAFB7527245A1100CBC31B /* ContactDAO.m in Sources */,
 				521F68DE272223CD0040E421 /* AppDelegate.m in Sources */,
 				521F68FE2722322B0040E421 /* ContactsListViewController.m in Sources */,
 				521F68FA27222AAF0040E421 /* Contact.m in Sources */,
